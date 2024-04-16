@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 options.UseSqlServer("Server=LAPTOP-UU2GQSSL\\PRAVINSQL;Database=bulky;Trusted_Connection=True;TrustServerCertificate=True"));
-okay
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
