@@ -1,0 +1,11 @@
+﻿@if (TempData["success"] != null)
+{
+    <script src="~/lib/jquery/dist/jquery.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" 0> </script>
+
+    <script type="text/javascript">
+        toastr.success('@TempData["success"]');
+    </script>
+}@*We Are not using this method instead we have pasted this coded into the _layout.cshtml file before
+    BodyRender() it will work same as it but that method is better than this for bigger project
+*@
