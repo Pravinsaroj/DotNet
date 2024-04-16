@@ -4,7 +4,11 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+builder.Services.AddRazorPages();
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+options.UseSqlServer("Server=LAPTOP-UU2GQSSL\\PRAVINSQL;Database=bulky;Trusted_Connection=True;TrustServerCertificate=True"));
+
+
 
 
 
